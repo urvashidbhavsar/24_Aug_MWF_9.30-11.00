@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Image Map circle</title>
+  </head>
+  <body>
+    <img src="images/wallclock.jpg" alt="wallclock" usemap="#clock" />
+
+    <!-- usemap attribute apply when we apply map on the image  -->
+
+    <!-- for imagemap used map tag 
+    map is a pair tag map-area
+
+    set co-ordinates - image points
+    in circle there have only 3 points - x, y, radius
+
+    x1-x2 = radius
+ -->
+    <map name="clock">
+      <area
+        shape="circle"
+        coords="398,274,120"
+        href="images/wallclock1.jpg"
+        alt=""
+      />
+      <!-- in href given also page name like h1.html -->
+    </map>
+  </body>
+</html>
