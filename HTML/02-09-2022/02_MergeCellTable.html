@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- for merge a cell - used attribute rowspan and colspan 
+
+    both attribute used in <th> or <td> tag
+    -->
+
+    <!-- if we can use rowspan - remove column from next row -->
+    <!-- if we can use colspan - remove column from that existing row -->
+
+    <!-- center tag dropped from HTML5 version -->
+    <center>
+      <i>A test table with merge cell</i>
+      <table
+        border="1"
+        cellpadding="10px"
+        style="text-align: center"
+        rules="all"
+      >
+        <tr>
+          <td rowspan="2"></td>
+          <th colspan="2">Avarage</th>
+          <td rowspan="2"><b>Red eyes</b></td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <th>Weight</th>
+        </tr>
+        <tr>
+          <th>Male</th>
+          <td>5.5</td>
+          <td>55kg</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <th>Female</th>
+          <td>5.0</td>
+          <td>45kg</td>
+          <td>60%</td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
