@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form -->
+    <!-- action attribute -> give a page name and go to next page  -->
+    <!-- name -> give a form name for ex, form1, form_1, RegPage 
+    wrong name : form 1, Reg page 1page -->
+
+    <!-- method = get, post 
+    get -> (1) it show form information in url (2) it has limitation. (3) not good to used
+
+    post -> it can wrap all information and send to the next page.
+
+    target -> _blank, _parent, _self, _top
+    _blank ->open a new tab
+    _parent, _self, _top-> open a file on same page
+    -->
+    <h1>Register Here</h1>
+    <form action="#" name="" method="get">
+      <!-- input -> type : text, radio button, password, checkbox, number, email...
+        textarea -> address, summary, feedback, etc.. select-option -> also called dropdown menu
+        for ex, city display
+        button -> submit, reset, button
+    -->
+      <label for="fname">Firstname</label>
+
+      <!-- non-closing tag -->
+      <input type="text" name="" id="fname" /> <br /><br />
+
+      <label for="mname">Middlename</label>
+      <input type="text" name="" id="mname" /> <br /><br />
+
+      <label for="">Address</label>
+      <textarea name="" id="" cols="50" rows="5"></textarea>
+    </form>
+  </body>
+</html>
