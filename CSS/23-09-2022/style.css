@@ -1,0 +1,12 @@
+/* create an external file -> style.css */
+p {
+  color: darkgray;
+  background-color: aquamarine;
+}
+/* then link your external file with <link> tag 
+
+how to give comment in html 
+<!-- .... -->
+
+CSS comment 
+/*  -singleline multiline */
