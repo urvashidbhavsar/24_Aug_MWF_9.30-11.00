@@ -1,0 +1,31 @@
+what is css?
+make used for HTML designing in proper manner
+
+full form -> cascading style sheet
+
+syntax -> 
+selector { property : value ; }
+
+css - basic 
+css3 - advanced
+
+how many was to create css?
+inline -> used with style attribute in particular element
+internal -> apply in <style> tag 
+external -> create a new file with filename.css extension
+
+what are selectors ?
+1) element selector 
+for ex, p { height : 200px} where p is a paragraph tag
+
+2) class selector 
+for ex, .myclass { height : 200px }
+
+3) ID selector 
+for ex, #myid { height : 200px }
+
+4) univarsal selector 
+for ex, * { height : 200px }
+
+5) group selector
+for ex, h1,h2,h3 { color : red ;}
