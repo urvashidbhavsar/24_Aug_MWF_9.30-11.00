@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        height: 200px;
+        width: 150px;
+        box-shadow: -2px 2px 5px black;
+        transition: 1s all ease;
+        border: 5px double blue;
+      }
+      .main {
+        /* display: flex;
+        justify-content: space-around; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px;
+      }
+      img:hover {
+        /* transform: translate(50px, 30px); */
+        /* transform: skew(10deg) translate(20px, 30px); */
+        transform: skewX(10deg) rotateY(20deg) scaleX(0.9);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <img src="images/img1.jfif" alt="" />
+      </div>
+      <div>
+        <img src="images/img2.jpg" alt="" />
+      </div>
+      <div>
+        <img src="images/img3.jfif" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

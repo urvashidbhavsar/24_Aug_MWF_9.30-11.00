@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 2px solid blue;
+        background-color: aqua;
+        height: 150px;
+        width: 150px;
+        animation-name: simple_ex;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        border-radius: 10px;
+      }
+      @keyframes simple_ex {
+        from {
+          margin: 0;
+          transform: rotate(-45deg);
+        }
+        to {
+          margin-left: 500px;
+          background-color: brown;
+          transform: rotate(45deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div><h1>Div1</h1></div>
+  </body>
+</html>
