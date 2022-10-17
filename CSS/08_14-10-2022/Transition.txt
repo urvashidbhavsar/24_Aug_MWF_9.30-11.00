@@ -1,0 +1,7 @@
+/* short hand property */
+transition: 2s all ease;
+transition-property: all;
+transition-duration: 1s 2s;
+transition-timing-function: ease/ ease-in / ease-in-out / ease-out / linear;
+/* delay means how much time waiting */
+transition-delay: 1s 2s;

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        padding: 30px;
+      }
+      a {
+        text-decoration: none;
+        color: navy;
+      }
+      span {
+        color: red;
+      }
+      header {
+        background-image: url(images/banner1.jpg);
+        height: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 20px;
+        position: relative;
+      }
+      header .header-nav {
+        display: flex;
+        width: 100%;
+        background-color: white;
+      }
+      /* parent sub-child sub-child-2*/
+      header .back-image .header-nav .logo {
+        padding: 20px;
+        width: 20%;
+      }
+      header .header-nav .nav {
+        width: 60%;
+      }
+      header .header-nav .search {
+        width: 20%;
+        display: flex;
+        padding: 40px;
+        justify-content: space-around;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 20px;
+      }
+      ul li {
+        padding: 20px;
+      }
+      header .search span {
+        color: black;
+        font-size: 25px;
+      }
+      header .search .search-op {
+        height: 25px;
+        width: 40px;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .text {
+        position: absolute;
+        top: 200px;
+        color: darkblue;
+        font-weight: 800;
+        left: 594px;
+        text-shadow: 2px 2px 5px grey;
+      }
+      /* flex ans grid used in parent class */
+    </style>
+  </head>
+  <body>
+    <header class="">
+      <div class="back-image">
+        <div class="header-nav">
+          <div class="logo">
+            <a href=""
+              ><h1>Real<span>Houzing</span></h1>
+            </a>
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Pages</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="search">
+            <div class="search-op">
+              <span class="fa-sharp fa-solid fa-magnifying-glass"></span>
+            </div>
+            <span class="fa-sharp fa-solid fa-moon"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="text">
+      <h1>This is Real Housing</h1>
+    </div>
+  </body>
+</html>

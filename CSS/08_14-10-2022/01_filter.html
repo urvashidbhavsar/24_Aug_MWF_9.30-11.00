@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div1 {
+        position: relative;
+      }
+      .text {
+        position: absolute;
+        top: 0;
+      }
+      img {
+        height: 400px;
+        width: 500px;
+        /* filter: blur(10px); -> blur image set value in px*/
+        /* filter: brightness(10%);  -> set brightness of the image and set its value in % */
+        /* filter: contrast(10%); -> set gray color effect on the image */
+        /* filter: drop-shadow(5px 5px 5px red); */
+        /* filter: grayscale(10%); -> set black-white color effect */
+        /* filter: hue-rotate(271deg); -> set value in 0 to 360 degree  */
+        /* filter: invert(10%); -> set negative image */
+        /* filter: opacity(100%); -> it set as blur image 100% - for clear image 0 image is blank */
+        /* filter: saturate(20%); */
+        filter: sepia(30%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <img src="images/banner1.jpg" alt="" />
+      <!-- <img src="images/backdesk.png" alt="" />
+      <img src="images/photoPea-image.png" alt="" /> -->
+      <div class="text">
+        <h1>Image</h1>
+      </div>
+    </div>
+  </body>
+</html>
