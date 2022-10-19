@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        height: 300px;
+        width: 300px;
+      }
+      .image {
+        height: 300px;
+        width: 300px;
+        position: relative;
+      }
+      .text {
+        position: absolute;
+        /* top: 0; */
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 0;
+        width: 100%;
+        background-color: blue;
+        color: white;
+        transition: 2s all ease;
+        opacity: 0.7;
+      }
+      .image:hover .text {
+        height: 100%;
+      }
+      h1 {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image">
+      <img src="wall.webp" alt="" />
+      <div class="text">
+        <h1>Hello world</h1>
+      </div>
+    </div>
+  </body>
+</html>

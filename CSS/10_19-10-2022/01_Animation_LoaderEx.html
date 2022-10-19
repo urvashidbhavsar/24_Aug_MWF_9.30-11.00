@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        height: 200px;
+        width: 200px;
+        border-top: 3px solid magenta;
+        margin: 200px auto;
+        position: relative;
+        animation: loader_ex 2s ease infinite;
+        border-radius: 50%;
+      }
+      .sub-main {
+        height: 150px;
+        width: 150px;
+        border-bottom: 3px solid rgb(137, 77, 137);
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        animation: loader_ex 2s ease infinite;
+        border-radius: 50%;
+      }
+      .sub {
+        height: 100px;
+        width: 100px;
+        border-top: 3px solid pink;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        animation: loader_ex 2s ease infinite;
+        border-radius: 50%;
+      }
+      @keyframes loader_ex {
+        0% {
+          transform: rotate(0deg);
+        }
+        /* 25% {
+          transform: rotate(90deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        75% {
+          transform: rotate(270deg);
+        } */
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sub-main">
+        <div class="sub"></div>
+      </div>
+    </div>
+  </body>
+</html>
