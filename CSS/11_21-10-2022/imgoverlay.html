@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .image {
+        height: 300px;
+        width: 300px;
+        border: 2px solid red;
+        margin-left: 200px;
+        overflow: hidden;
+        position: relative;
+      }
+      img {
+        height: 300px;
+        width: 300px;
+      }
+      .text {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: green;
+        opacity: 0.5;
+        transition: 1s all ease;
+        transform: scale(0);
+      }
+      .image:hover .text {
+        transform: scale(1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image">
+      <img src="imagw.jpg" alt="" />
+      <div class="text">
+        <h1>Animal</h1>
+      </div>
+    </div>
+  </body>
+</html>

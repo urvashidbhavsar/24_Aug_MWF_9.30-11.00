@@ -1,0 +1,14 @@
+what is a media Query
+-> used to make responsive website.
+
+devices ->
+mobile -
+mini leptop-leptop 
+tablet
+TV screen
+
+max-width = < 576px (mobile screen)
+min-width = > 576px (mobile large screen)
+min-width = > 786px (table screen)
+min-width = > 992px (mini-leptop)
+min-width = > 1200px (1168) (large-screen leptop)
