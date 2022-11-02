@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.home-image {
+  background-image: url(tem_images/HomeImage.jpg);
+  /* filter: brightness(65%); */
+  height: 700px;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+}
+.home-image .header-nav {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+.home-image .header-nav .left-logo {
+  width: 20%;
+}
+.home-image .header-nav .left-logo a {
+  color: white;
+  font-size: 0.4in;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.home-image .header-nav .left-logo span {
+  font-family: system-ui;
+  font-weight: lighter;
+}
+.home-image .header-nav .middle-nav {
+  padding: 50px;
+  width: 60%;
+}
+.home-image .header-nav .middle-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home-image .header-nav .middle-nav a {
+  color: white;
+}
+.home-image .header-nav .right-search {
+  width: 20%;
+  padding: 30px;
+}
+.home-image .right-search span {
+  padding: 5px;
+  color: white;
+}
+.home-image .right-search button {
+  height: 40px;
+  width: 110px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  color: #a13535;
+  font-weight: bold;
+}
+header .home-content {
+  position: absolute;
+  top: 300px;
+  color: white;
+}
+header .home-content .home-heading {
+  font-size: 0.5in;
+}
+header .home-content .sub-head {
+  font-size: 0.3in;
+}
