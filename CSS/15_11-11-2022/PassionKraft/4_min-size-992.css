@@ -1,0 +1,123 @@
+@media (min-width: 992px) {
+  .home-image {
+    height: 700px;
+    width: 100%;
+  }
+  .home-image .header-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .home-image .header-nav .left-logo {
+    width: 100%;
+  }
+  .home-image .header-nav .middle-nav {
+    padding: 10px;
+    width: 100%;
+  }
+  .home-image .header-nav .middle-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-image .header-nav .right-search {
+    display: none;
+  }
+  header .home-content .home-heading {
+    font-size: 0.4in;
+  }
+  header .home-content .sub-head {
+    font-size: 0.3in;
+  }
+  .header-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .header-bottom .middle-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0;
+    padding: 0;
+  }
+  .header-bottom .middle-content .links {
+    padding: 20px;
+    margin: 50px auto;
+  }
+  .header-bottom .right-button button {
+    height: 150px;
+    width: 250px;
+  }
+  .header-bottom .middle-content span,
+  a {
+    font-size: 10px;
+  }
+  .header-bottom .left-image img {
+    height: 150px;
+    width: 250px;
+  }
+  .AboutAs {
+    display: flex;
+    flex-direction: row;
+  }
+  .AboutAs .left-about {
+    padding: 0px;
+  }
+  .AboutAs .left-about img {
+    height: 360px;
+    width: 265px;
+  }
+  .AboutAs .right-about {
+    padding: 20px;
+  }
+  .AboutAs .right-about .a-head {
+    padding-left: 0px;
+  }
+  .AboutAs .right-about .bold-head {
+    padding-left: 0px;
+  }
+  .AboutAs .right-about .about-information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0px;
+  }
+  .AboutAs .right-about .about-info-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+  .AboutAs .right-about .about-info-images img {
+    height: 200px;
+    width: 200px;
+  }
+  .AboutAs .right-about .about-info-images .img-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  footer {
+    padding: 0px;
+  }
+  footer .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  footer .footer-content .left-content,
+  .middle-content,
+  .right-content {
+    padding: 20px;
+  }
+  footer .footer-content .left-content p {
+    width: 100%;
+  }
+  footer .footer-content .middle-content .links {
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footer-content .middle-content a {
+    font-size: 15px;
+  }
+  footer .footer-content .middle-content li {
+    padding: 5px;
+  }
+}
