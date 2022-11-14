@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <style>
+      .nav {
+      }
+      ul {
+        list-style: none;
+        display: flex;
+      }
+      a {
+        text-decoration: none;
+        color: blue;
+        font-size: 25px;
+      }
+      li {
+        padding: 20px;
+        background-color: aqua;
+      }
+      .list {
+        position: relative;
+      }
+      .disp-list {
+        display: none;
+        position: absolute;
+        top: 57px;
+        background-color: burlywood;
+        padding: 10px;
+      }
+      .list:hover .disp-list {
+        display: block;
+      }
+      .list_name span {
+        transition: 0.5s all ease;
+      }
+      .list_name:hover span {
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li class="list">
+          <a href="" class="list_name"
+            >services<span class="fa-solid fa-angle-down"></span
+          ></a>
+          <div class="disp-list">
+            <a href="">Service 1</a>
+            <a href="">Service 1</a>
+            <a href="">Service 1</a>
+          </div>
+        </li>
+        <li><a href="">Help</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

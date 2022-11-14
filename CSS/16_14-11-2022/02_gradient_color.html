@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div1 {
+        height: 200px;
+        width: 200px;
+        /* linear, radial, conical */
+        background-image: linear-gradient(
+          to top,
+          green 20%,
+          darkblue 36%,
+          red 98%
+        );
+        margin-bottom: 10px;
+      }
+      .div2 {
+        height: 200px;
+        width: 200px;
+        /* linear, radial, conical */
+        background-image: radial-gradient(
+          circle at top,
+          blue 12%,
+          green 49%,
+          red 68%,
+          black 80%
+        );
+        margin-bottom: 10px;
+      }
+      .div3 {
+        height: 200px;
+        width: 200px;
+        margin-bottom: 10px;
+        background-image: conic-gradient(
+          red 48deg,
+          green 117deg,
+          blue 265deg,
+          black 357deg
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <!-- gradient color i.e. combination of two or more colors -->
+
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+  </body>
+</html>
