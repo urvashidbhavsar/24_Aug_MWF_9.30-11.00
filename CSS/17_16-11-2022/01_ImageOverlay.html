@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        height: 200px;
+        width: 200px;
+      }
+      .main {
+        height: 200px;
+        width: 200px;
+        /* border: 2px solid black; */
+        overflow: hidden;
+        position: relative;
+      }
+      .text {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        /* top: 0; */
+        background-color: black;
+        opacity: 0.8;
+        color: white;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        transition: 1s all ease;
+        transform: scale(0);
+      }
+      .text-1 h1 {
+        transition: 1s all ease;
+        transition-delay: 1s;
+        transform: scale(0);
+      }
+      .main:hover .text {
+        transform: scale(1);
+      }
+      .main:hover h1 {
+        transform: scale(1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <img src="collection-1.jpg" alt="" />
+      <div class="text">
+        <div class="text-1">
+          <h1>Hello world</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

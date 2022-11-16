@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+      .underline1::before {
+        content: "";
+      }
+      .underline1::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 70px;
+        background-color: red;
+        transform: scaleX(0);
+        transition: 1s all ease;
+      }
+      .underline1:hover::after {
+        transform: scaleX(1);
+      }
+      .underline2::before {
+        content: "";
+      }
+      .underline2::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 70px;
+        background-color: red;
+        transform: scaleY(0);
+        transition: 1s all ease;
+      }
+      .underline2:hover::after {
+        transform: scaleY(1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <a href="" class="underline1">Click Here</a>
+      </div>
+      <div>
+        <a href="" class="underline2">Click Here</a>
+      </div>
+      <div>
+        <a href="" class="underline3">Click Here</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+body {
+  background-image: linear-gradient(
+    to left,
+    rgb(0, 170, 255),
+    rgb(77, 77, 239)
+  );
+}
+.main {
+  padding: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  gap: 50px;
+}
+.btn1,
+.btn2,
+.btn3,
+.btn4,
+.btn5,
+.btn6,
+.btn7,
+.btn8,
+.btn9 {
+  height: 50px;
+  width: 100px;
+  background-color: transparent;
+  border-radius: 20px;
+  transition: 1s all ease;
+}
+.btn10,
+.btn11,
+.btn12 {
+  height: 50px;
+  width: 100px;
+  border: 1px solid white;
+  background-color: transparent;
+  transition: 0.5s all ease;
+}
+.btn1:hover {
+  transform: rotateX(360deg);
+}
+.btn2:hover {
+  transform: rotateY(360deg);
+}
+.btn3:hover {
+  transform: rotateZ(360deg);
+}
+.btn4:hover {
+  transform: scale(1.3);
+}
+.btn5:hover {
+  transform: scale(0.8);
+}
+.btn6:hover {
+  transform: skewX(10deg);
+}
+.btn7:hover {
+  transform: skewY(10deg);
+}
+.btn8:hover {
+  border: 2px dotted red;
+  border-radius: 0;
+}
+.btn9:hover {
+  border-radius: 0;
+  border: 5px ridge orchid;
+  background-color: darkgray;
+  color: blue;
+}
+.btn10:hover {
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+}
+.btn11:hover {
+  border-top: 15px solid white;
+  border-bottom: 15px solid white;
+}
+.btn12:hover {
+  border: 5px outset brown;
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.3in;
+}
+.underline1::before {
+  content: "";
+}
+.underline1::after {
+  content: "";
+  display: block;
+  transform: scaleX(0);
+  height: 2px;
+  width: 100%;
+  background-color: brown;
+  transition: 1s all ease;
+}
+.underline1:hover::after {
+  transform: scaleX(0.5);
+}
+.underline2::before {
+  content: "";
+}
+.underline2::after {
+  content: "";
+  display: block;
+  transform: scaleY(0);
+  height: 2px;
+  background-color: brown;
+  transition: 1s all ease;
+}
+.underline2:hover::after {
+  transform: scaleY(1);
+}
+.underline3 {
+  position: relative;
+  display: inline-block;
+}
+.underline3::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: brown;
+}
+.underline3::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: brown;
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: 2s all ease;
+}
+.underline3:hover::after {
+  transform: scale(1, 1);
+}
