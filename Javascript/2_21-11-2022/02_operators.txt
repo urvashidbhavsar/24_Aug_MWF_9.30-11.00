@@ -1,0 +1,23 @@
+operators -> 
+
+5 type 
+
+(1) arithmetic
+(2) comperision / relational
+(3) logical
+(4) assignment
+(5) bitwise 
+
+(1) arithmetic -> +(addition), -(subtraction), *(multiplication), / (division), %(modules), ++(increment), --(decrement)
+
+(2) comperision ->
+> , < , >=, <=, ==, !=, <<, >> 
+
+(3) logical ->
+&& (and), || (or), !(not)
+
+(4) assignment -> 
+= , +=, -=, *=, /=, %=
+
+(5) bitwise ->
+&(and), |(or), !, ^

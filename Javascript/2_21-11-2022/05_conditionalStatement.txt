@@ -1,0 +1,29 @@
+conditional statement ->
+
+(1) if statement
+    (a) if..else
+    (b) if.. else if.. else
+(2) switch statement -
+
+syntax : 
+{} - block
+if(condition){
+
+}else if(condition){
+
+}else{
+
+}
+
+switch statement syntax =>
+
+switch(variable_name){
+    case 1: 
+    case 2:
+    case 3:
+    ..
+    case N:
+    default :
+}
+
+comparision and logical operators are used with conditional statement
