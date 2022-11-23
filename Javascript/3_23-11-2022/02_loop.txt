@@ -1,0 +1,6 @@
+loop means count number of iteration
+
+there is a three type of loop :-
+(1) while loop -> whenever value are true.
+(2) do...while loop
+(3) for loop

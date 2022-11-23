@@ -1,0 +1,29 @@
+there are 2 type of function :-
+(1) built-in / predefine - which are provide by s/w.
+    for ex, write(), writeln(), focus(), isNan(), log()
+
+(2) user-define
+    - created by user.
+
+    syntax : 
+    function function_name(){
+
+    }
+
+    here, function is keyword to declare function
+    function_name - to give function name
+    () -> pass parameter value, default is blank
+    {} - define block
+
+
+events -> perform some task
+4 type of event -> 
+-keyboard
+-mouse
+-form
+-window
+
+event handler -> which is handle the event.
+click -> onclick
+dblclick -> ondblclick
+
