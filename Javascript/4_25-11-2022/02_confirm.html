@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function confirm_msg() {
+        if (confirm("are you sure want to leave this page") == true) {
+          //   alert("ok");
+          //   document.getElementById("p1").innerHTML = "ok";
+          //   document.body.style.backgroundColor = "#123456";
+        } else {
+          //   alert("cancel");
+          //   document.getElementById("p1").innerHTML = "cancel";
+          //   document.body.style.backgroundColor = "#987065";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="confirm_msg()">confirm Button</button>
+    <p id="p1"></p>
+  </body>
+</html>

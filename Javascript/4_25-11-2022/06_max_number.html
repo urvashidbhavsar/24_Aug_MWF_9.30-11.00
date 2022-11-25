@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function max_number() {
+        let num1 = document.form1.num1.value;
+        let num2 = document.form1.num2.value;
+
+        if (num1 > num2) {
+          document.getElementById("p1").innerHTML = num1 + " is max";
+          return false;
+        } else if (num2 > num1) {
+          document.getElementById("p1").innerHTML = num2 + " is max";
+          return false;
+        } else {
+          document.getElementById("p1").innerHTML =
+            num1 + " and " + num2 + " are same";
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="" name="form1">
+      <label for="">Number 1 : </label>
+      <input type="text" name="num1" /> <br /><br />
+
+      <label for="">Number 2 : </label>
+      <input type="text" name="num2" /> <br /><br />
+
+      <button onclick="return max_number()">Result</button>
+
+      <p id="p1"></p>
+    </form>
+  </body>
+</html>

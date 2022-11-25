@@ -1,0 +1,5 @@
+there is three type of popup boxes :
+
+(1) alert -> show only notification / only msg
+(2) confirm -> ask you for confirmation about window.
+(3) prompt -> it take input from user.
