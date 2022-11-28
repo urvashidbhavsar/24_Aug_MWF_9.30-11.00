@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="01_form_validation.js"></script>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  onsubmit="" used only with form -->
+    <form action="" name="form1" method="get">
+      <label for="">Name <span>*</span> : </label>
+      <input type="text" name="fname" id="fname" /><br />
+      <span id="fname_msg"></span> <br />
+
+      <label for="">Gender :</label>
+      <input type="radio" name="gen" id="" />Male
+      <input type="radio" name="gen" id="" />Female
+      <br />
+      <span id="gender_msg"></span>
+      <br />
+
+      <label for="">Subject :</label>
+      <input type="checkbox" name="sub1" id="" /> CSS
+      <input type="checkbox" name="sub2" id="" /> JS
+      <input type="checkbox" name="sub3" id="" /> Jquery
+      <br />
+      <span id="sub_msg"></span><br />
+
+      <label for="">City : </label>
+      <select name="city">
+        <option value="-1">---select---</option>
+        <option value="">Surat</option>
+        <option value="">Bharuch</option></select
+      ><br />
+      <span id="city_msg"></span>
+      <button type="submit" onclick="return form_valid()">Click Here</button>
+    </form>
+  </body>
+</html>
+
+<!-- <script>
+    isNaN() -> is not a number
+</script> -->
