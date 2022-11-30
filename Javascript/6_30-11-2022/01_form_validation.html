@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="01_form_validation.js"></script>
+    <script src="password.js"></script>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" name="form1">
+      Mobile No : <span>*</span>
+      <input type="text" name="mno" id="" maxlength="10" />
+      <span id="msg_mno"></span>
+      <br />
+
+      Email : <span>*</span>
+      <input type="text" name="mail" id="" />
+      <span id="msg_email"></span>
+      <br />
+
+      Password :
+      <input type="password" name="pass" id="pass" /> <br />
+      <br />
+      Confirm Password :
+      <input type="password" name="cpass" id="" /> <br />
+      <br />
+      <input type="checkbox" onclick="check_pass()" /> Show Password
+      <span id="pass_msg"></span>
+
+      <br />
+      <input
+        type="submit"
+        name=""
+        id=""
+        onclick="return form_valid()"
+        value="Click here"
+      />
+
+      <!-- <button type="submit" onclick="return form_valid()">Click Here</button> -->
+    </form>
+  </body>
+</html>
