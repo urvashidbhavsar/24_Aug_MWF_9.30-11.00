@@ -1,0 +1,25 @@
+@media (max-width: 576px) {
+  header .header-nav .btn-bar {
+    display: block;
+    position: relative;
+  }
+  header .nav-bars .header-nav .right-nav {
+    display: none;
+  }
+  header .nav-bars .header-nav .navi {
+    display: block;
+    background-color: black;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 173px;
+    border-radius: 10px;
+  }
+  header .nav-bars .header-nav .navi ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header .nav-bars .header-nav .navi a {
+    color: white;
+  }
+}

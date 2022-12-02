@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="01_style.css" />
+    <link rel="stylesheet" href="max_width576px.css" />
+  </head>
+  <body>
+    <!-- navigation -->
+    <header>
+      <div class="nav-bars">
+        <div class="header-nav">
+          <div class="left-logo">
+            <span class="fa-solid fa-moon"></span>
+          </div>
+          <div class="right-nav">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Pages</a></li>
+            </ul>
+          </div>
+          <button class="btn-bar">
+            <span class="fa-solid fa-bars"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      let btn = document.querySelector(".btn-bar");
+      let header_nav = document.querySelector(".right-nav");
+
+      btn.addEventListener("click", function () {
+        header_nav.classList.toggle("navi");
+      });
+    </script>
+  </body>
+</html>
