@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: lightblue;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+.dark-theme {
+  background-color: rgb(27, 26, 26);
+  color: rgb(213, 74, 74);
+}
+.dark-theme a {
+  color: blue;
+}
+.dark-theme header {
+  background-color: aquamarine;
+}
+.container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+header .header-nav {
+  display: flex;
+}
+header .header-nav .logo {
+  padding: 30px;
+  flex: 1;
+}
+header .header-nav .logo a {
+  font-size: 36px;
+}
+header .header-nav .nav-right {
+  flex: 3;
+  padding: 30px;
+}
+header .header-nav .nav-right ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-nav .nav-right li {
+  padding: 20px;
+}
+header .header-nav .theme {
+  padding: 30px;
+  flex: 1;
+  font-size: 40px;
+  text-align: right;
+}
+header .header-nav .theme span {
+  padding: 10px;
+}
+header .header-nav .btn {
+  padding: 30px;
+}
+header .header-nav .disp-menu {
+  height: 55px;
+  width: 40px;
+  background: transparent;
+  border-radius: 10px;
+  display: none;
+}
+
+@media (max-width: 576px) {
+  header {
+    width: 100%;
+  }
+  header .header-nav .nav-right {
+    display: none;
+  }
+  header .header-nav .disp-menu {
+    display: block;
+    position: relative;
+  }
+  header .header-nav .menu {
+    display: block;
+    background-color: rgb(241, 222, 222);
+    position: absolute;
+    top: 90px;
+    right: 0;
+    height: auto;
+    width: 90px;
+  }
+  header .header-nav .menu a {
+    color: darkblue;
+  }
+  header .header-nav .menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header .header-nav .menu ul li {
+    padding: 10px;
+  }
+}
