@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script>
+      function onchangeEvent() {
+        let inputVal = document.querySelector("#input_val");
+        let show = document.querySelector("#p1");
+
+        show.textContent = this.value;
+      }
+    </script> -->
+
+    <!-- onchange event use to change content autometically i.e. without click on button -->
+  </head>
+  <body>
+    <form action="">
+      Enter any Value : <input type="text" name="" id="input_val" onchange="" />
+
+      <p id="p1"></p>
+    </form>
+
+    <script>
+      let inputVal = document.querySelector("#input_val");
+      let show = document.querySelector("#p1");
+
+      inputVal.addEventListener("change", function () {
+        show.textContent = this.value;
+      });
+    </script>
+  </body>
+</html>

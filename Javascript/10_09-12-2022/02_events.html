@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: auto;
+        width: 300px;
+        padding: 10px;
+        border: 1px solid black;
+      }
+    </style>
+    <script>
+      function mouse_event() {
+        alert("this is paragraph");
+        document.getElementById("p1").innerHTML = "this is paragraph";
+      }
+      function keypressEvent() {
+        alert("you are press the key now");
+        // document.getElementById("p1").innerHTML = "this is paragraph";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <p onmouseout="return mouse_event()">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+        tempora quos nostrum quibusdam impedit. Odio iure atque non repellendus
+        inventore veritatis eligendi magnam. Est illo quos labore nesciunt
+        quidem consequatur!
+      </p>
+      <span id="p1"></span>
+    </div>
+
+    <br />
+
+    <div>
+      <input type="text" name="" id="" onkeypress="return keypressEvent()" />
+    </div>
+  </body>
+</html>

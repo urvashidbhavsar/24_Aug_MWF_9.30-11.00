@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="counter"></div>
+
+    <div id="counter1"></div>
+    <script>
+      let counting = setInterval(cal_count);
+      let counting1 = setInterval(cal_count1);
+
+      let values = 500;
+      function cal_count() {
+        let count = document.querySelector("#counter");
+        count.innerHTML = ++values;
+        if (values == 1000) {
+          clearInterval(counting);
+        }
+      }
+      let values_1 = 1000;
+      function cal_count1() {
+        let count = document.querySelector("#counter1");
+        count.innerHTML = ++values_1;
+        if (values_1 == 2000) {
+          clearInterval(counting1);
+        }
+      }
+    </script>
+  </body>
+</html>
