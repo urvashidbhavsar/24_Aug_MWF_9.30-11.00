@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery online cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <!-- bxslide css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css"
+    />
+    <style>
+      .info {
+        display: flex;
+        background-color: lightblue;
+      }
+      .info .image-1 {
+        background-image: url(images/img1.jpg);
+        height: 500px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+      .info .image-2 {
+        background-image: url(images/img2.jpg);
+        background-position: center;
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+      }
+      .info .image-3 {
+        background-image: url(images/img3.jpeg);
+        background-position: center;
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $(".bxslider").bxSlider();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="bxslider">
+      <div class="info">
+        <div class="image-1">
+          <!-- <img src="images/img1.jpg" alt="" /> -->
+          <h1>Hello world</h1>
+        </div>
+      </div>
+      <div class="info">
+        <div class="image-2">
+          <!-- <img src="images/img2.jpg" alt="" /> -->
+          <h1>bxslider</h1>
+        </div>
+      </div>
+      <div class="info">
+        <div class="image-3">
+          <!-- <img src="images/img3.jpeg" alt="" /> -->
+          <h1>Nirali</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

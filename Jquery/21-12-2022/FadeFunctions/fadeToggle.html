@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery online cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $(".div1").fadeIn(2000);
+        });
+
+        $("#btn2").click(function () {
+          $(".div1").fadeOut(5000);
+        });
+
+        $("#btn3").click(function () {
+          $(".div2").fadeToggle();
+        });
+      });
+    </script>
+    <style>
+      .div1 {
+        display: none;
+        height: 150px;
+        width: 150px;
+        border: 2px solid black;
+        background-color: aqua;
+      }
+      .div2 {
+        /* display: none; */
+        height: 150px;
+        width: 150px;
+        border: 2px solid blue;
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- fade functions work with only opacity -->
+    <button id="btn1">Fadein</button>
+    <button id="btn2">FadeOut</button>
+    <button id="btn3">FadeToggle</button>
+    <hr />
+    <div class="div1"></div>
+    <div class="div2"></div>
+  </body>
+</html>

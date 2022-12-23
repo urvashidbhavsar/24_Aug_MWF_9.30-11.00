@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="formValidation.css" />
+    <!-- jquery online cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $(".reg-form").toggle(2000);
+        });
+
+        $("#btn2").click(function () {
+          $(".reg-form").fadeToggle(2000);
+        });
+
+        $("#btn3").click(function () {
+          $(".reg-form").slideToggle(2000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button id="btn1">Toggle</button>
+    <button id="btn2">FadeToggle</button>
+    <button id="btn3">SlideToggle</button>
+    <div class="reg-form">
+      <h1>Registration Form</h1>
+      <form action="#" name="form1" method="get">
+        <div class="row">
+          <div class="col"><label for="">First name</label></div>
+          <div class="col-1">
+            <input type="text" name="fname" id="" />
+            <p id="fmsg"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"><label for="">Middle name</label></div>
+          <div class="col-1">
+            <input type="text" name="mname" id="" />
+            <p id="mmsg"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"><label for="">Last name</label></div>
+          <div class="col-1">
+            <input type="text" name="lname" id="" />
+            <p id="lmsg"></p>
+          </div>
+        </div>
+        <!-- email -->
+        <div class="row">
+          <div class="col"><label for="">Email</label></div>
+          <div class="col-1">
+            <input type="text" name="mail" id="" />
+            <p id="mail_msg"></p>
+          </div>
+        </div>
+        <!-- password -->
+        <div class="row">
+          <div class="col"><label for="">Password</label></div>
+          <div class="col-1">
+            <input type="password" name="security" id="sec" maxlength="8" />
+            <p>
+              <input type="checkbox" onclick="hide_show()" />
+              <label for="">Show password</label>
+            </p>
+            <p id="pmsg"></p>
+          </div>
+        </div>
+        <!-- radio button -->
+        <div class="row">
+          <div class="col"><label for="">Gender</label></div>
+          <div class="col-1">
+            <input type="radio" name="gen" />
+            <label for="">Male</label>
+            <input type="radio" name="gen" id="" />
+            <label for="">Female</label>
+          </div>
+        </div>
+        <!-- checkbox -->
+        <div class="row">
+          <div class="col"><label for="">Subject</label></div>
+          <div class="col-1">
+            <input type="checkbox" name="c1" id="" />
+            <label for="">HTML</label>
+            <input type="checkbox" name="c2" id="" />
+            <label for="">CSS</label>
+            <input type="checkbox" name="c3" id="" />
+            <label for="">JS</label>
+          </div>
+        </div>
+        <!-- dropdown -->
+        <div class="row">
+          <div class="col"><label for="">Experience</label></div>
+          <div class="col-1">
+            <select name="exp" id="">
+              <option value="">---select---</option>
+              <option value="">&lt;1</option>
+              <option value="">&gt;1</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- mobile no -->
+        <div class="row">
+          <div class="col"><label for="">Mobile no</label></div>
+          <div class="col-1">
+            <input type="text" name="mno" id="" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col"><label for="">Experience</label></div>
+          <div class="col-1">
+            <select name="exp" id="">
+              <option value="">---select---</option>
+              <option value="">&lt;1</option>
+              <option value="">&gt;1</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- button -->
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-1">
+            <input
+              type="submit"
+              name="submit"
+              value="Register"
+              class="btn1"
+              onclick="return check_form_validation()"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

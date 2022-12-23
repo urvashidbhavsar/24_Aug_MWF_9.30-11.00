@@ -1,0 +1,29 @@
+jquery is a library of javascript.
+
+version -> 3.6.3
+
+CDN -> content delivery network.
+offline -> download liabrary package
+online -> used link
+
+the reserve special character is $ sign.
+
+syntax :
+
+$(document).ready(function{
+    // statements
+})
+
+built in functions.
+
+functions :
+
+display functions -> hide(), show(), toggle()
+fade functions -> fadeIn(), fadeOut(), fadeToggle(), fadeTo()
+sliding function -> slideUp(), slideDown(), slideToggle()
+Set Attribute function -> text(), html(), val()
+Get Attribute function -> text(), html(), val()
+Add class -> addClass(), removeClass(), toggleClass()
+css function -> css()
+animation function -> animate()
+remove function -> empty(), remove()
