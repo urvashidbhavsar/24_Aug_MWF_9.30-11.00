@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      // original class - .header-top
+      // replacement class - menu-fixed
+      $(document).ready(function () {
+        $headers = $(".header-top");
+        $(window).scroll(function (event) {
+          $currentVal = $(this).scrollTop();
+          if ($currentVal > 0) {
+            $headers.addClass("menu-fixed");
+          } else {
+            $headers.removeClass("menu-fixed");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="header-nav">
+            <div class="logo">
+              <h1><a href="">Logo</a></h1>
+            </div>
+            <div class="nav">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <img src="img2.jpg" alt="" />
+    </section>
+    <section>
+      <img src="img3.jpeg" alt="" />
+    </section>
+  </body>
+</html>

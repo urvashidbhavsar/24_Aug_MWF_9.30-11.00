@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+      div {
+        height: auto;
+        width: 150px;
+        padding: 20px;
+        background-color: lightcoral;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("div").empty(); /*only remove content */
+        });
+        $("#btn2").click(function () {
+          $("div").remove();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- empty(), remove() -->
+
+    <button id="btn1">Empty</button>
+    <button id="btn2">Remove</button>
+    <hr />
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa, dolor
+      assumenda commodi quia harum! Quibusdam est illo facilis quidem dicta sed
+      sapiente, minima, aliquam iste a perferendis animi recusandae!
+    </div>
+  </body>
+</html>

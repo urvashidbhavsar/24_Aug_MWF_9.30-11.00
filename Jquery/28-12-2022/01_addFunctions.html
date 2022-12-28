@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+      #img1 {
+        height: 200px;
+        width: 250px;
+      }
+      #img2 {
+        height: 150px;
+        width: 200px;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("h1").append("!!!"); /*add value after / end of the content*/
+        });
+        $("#btn2").click(function () {
+          $("h1").prepend("#"); /*add value before / begining of the content*/
+        });
+        // use with only image
+        $("#btn3").click(function () {
+          $("#img1").before(" <img src='img1.jpg' alt='' id='img2' />");
+        });
+        $("#btn4").click(function () {
+          $("#img1").after(" <img src='img1.jpg' alt='' id='img3' />");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- append(), prepand(), before(),after() -->
+    <button id="btn1">Append</button>
+    <button id="btn2">Prepand</button>
+    <button id="btn3">Before</button>
+    <button id="btn4">After</button>
+    <hr />
+    <h1>Hello world</h1>
+
+    <img src="img1.jpg" alt="" id="img1" />
+  </body>
+</html>
