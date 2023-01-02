@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <style>
+      p {
+        height: auto;
+        width: 500px;
+        border: 2px solid black;
+        padding: 10px;
+        /* float: left; */
+      }
+      .para {
+        color: red;
+        font-weight: 700;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $(".btn1").click(function () {
+          //   $("p").filter(".p2").addClass("para");
+          //   $("p").first().addClass("para");
+          //   $("p").last().addClass("para");
+          //   $("p").eq(1).addClass("para");
+          $("p").not(".p2").addClass("para");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- filter(), first(), last(), eq(), not() -->
+    <button class="btn1">Check</button>
+    <p class="p1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+      pariatur nihil rem vitae, dicta rerum inventore repellat ratione quo,
+      error reprehenderit est enim obcaecati? Necessitatibus totam ipsa quam
+      obcaecati iusto.
+    </p>
+    <p class="p2">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum delectus
+      ipsam ab alias, facere aliquid unde deserunt adipisci dolore voluptatem
+      vel, asperiores, quo cum reprehenderit cumque dicta! Mollitia, minus
+      earum?
+    </p>
+    <p class="p3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint suscipit
+      omnis fugit. Ex debitis laboriosam vel id harum, amet sunt? Voluptatibus a
+      debitis impedit magni eum iusto expedita quas corporis!
+    </p>
+  </body>
+</html>

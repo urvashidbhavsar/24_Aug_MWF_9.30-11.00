@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        font-size: 30px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("p").text("This is set content text");
+        });
+        $("#btn2").click(function () {
+          $("p").html("<i>This is set content text</i>");
+        });
+        $("#btn3").click(function () {
+          $("input").val("Hello user, welcome!!!!");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- there is 3 function to set content ->
+        text(), val(), html()
+    -->
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button>
+
+    <p>Hello world</p>
+    <input type="text" value="Hello user" readonly />
+  </body>
+</html>
