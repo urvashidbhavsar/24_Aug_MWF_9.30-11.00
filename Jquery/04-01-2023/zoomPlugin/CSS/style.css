@@ -1,0 +1,17 @@
+html,
+* {
+  font-family: "Inter";
+  box-sizing: border-box;
+}
+body {
+  background-color: #fafafa;
+  line-height: 1.6;
+}
+.lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.container {
+  margin: 150px auto;
+  max-width: 960px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("#content").load("data.txt");
+        });
+      });
+    </script>
+    <style>
+      h1 {
+        cursor: wait;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- AJAX -> aynchronized javascript and XML 
+        used to load another file data in your current page without reloading.
+    -->
+
+    <button id="btn1">Click Here to load data</button>
+
+    <h1 id="content"></h1>
+  </body>
+</html>
