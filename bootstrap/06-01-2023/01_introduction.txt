@@ -1,0 +1,9 @@
+bootstrap -> getbootstrap.com
+
+it is mainly CSS liabrary.
+
+version -> bootstrap 5 -> 5.3.0
+
+CDN ->
+online cdn -> it is given on original website.
+offline -> download bootstrap package
